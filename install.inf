@@ -1,0 +1,5 @@
+[info]
+title=Linter for CoffeeScript, using coffee
+desc=Linter for CudaLint, adds support for CoffeeScript lexer, using coffee
+type=cudatext-plugin
+subdir=cuda_lint_coffee
