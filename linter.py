@@ -5,16 +5,16 @@
 
 import os
 from cuda_lint import Linter, util
+from cudax_nodejs import NODE_FILE
 
-_node = 'node' if os.name=='nt' else 'nodejs'
-_js = os.path.join(os.path.dirname(__file__), 'node_modules', 'coffee-script', 'bin', 'coffee')
+_js = os.path.join(os.path.dirname(__file__), 'node_modules', 'coffeescript', 'bin', 'coffee')
 
 
 class Coffee(Linter):
     """Provides an interface to coffee --compile."""
 
     syntax = 'CoffeeScript'
-    cmd = (_node, _js, '--compile', '--stdio')
+    cmd = (NODE_FILE, _js, '--compile', '--stdio')
     version_args = '--version'
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
     version_requirement = '>= 1.5'

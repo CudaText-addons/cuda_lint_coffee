@@ -1,4 +1,8 @@
 
+2022.10.08
+* change: removed Node package, user must install it in linter's folder
++ add: reused cudax_nodejs module
+
 2019.06.20
 + updated Node package
 
